@@ -1,0 +1,7 @@
+{
+  "name": "firebaseChat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

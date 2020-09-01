@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "esalchat": {
+      "hosting": {
+        "app": [
+          "esalchat"
+        ]
+      }
+    }
+  }
+}

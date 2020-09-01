@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color = "danger">
+    <ion-title> Esal Chat</ion-title>
+
+  </ion-toolbar>
+
+
+ </ion-header>
+ <ion-content>
+ <ion-grid>
+ <ion-list>
+   <ion-item *ngFor = "let item of (messageData | async )"  >
+      {{item.usuario}}
+      {{item.mensagem}}
+      {{item.dataHora}}
+
+   <ion-button slot = end color = danger (click) = deleteMessage(item) > excluir </ion-button>
+   </ion-item>
+
+
+ </ion-list>
+</ion-grid>
+ <ion-list>
+ <ion-item slot = bottom>
+
+ <ion-input  [(ngModel)]="message.mensagem" position = "floating">   </ion-input>
+ <ion-button slot = "end"  expand = "block" color = "primary" (click) = sendMessage()>  Enviar    </ion-button>
+</ion-item>
+</ion-list>
+
+
+ </ion-content>
